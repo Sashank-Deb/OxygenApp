@@ -1,0 +1,984 @@
+  <head> 
+  <div class="taskbar">
+</div> 
+    <link rel="icon" href="ambulance.png" type="image/icon type">
+    <link rel="stylesheet" type="text/css" href="css/symptoms.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css" integrity="sha384-wESLQ85D6gbsF459vf1CiZ2+rr+CsxRY0RpiF1tLlQpDnAgg6rwdsUF1+Ics2bni" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function(){
+        $('.click').click(function(){
+          $('.popup_box').css("display", "block");
+        });
+        $('.btn1').click(function(){
+          $('.popup_box').css("display", "none");
+        });
+      });
+    </script>
+    <script>
+    function myFunction0() {
+      fetch('https://spreadsheets.google.com/feeds/list/1SqrjV1tI_0N-Utiv5TYzYYhonBFGf_72o6XaanFvLwo/od6/public/basic?alt=json')
+      .then((response) => {
+        return response.json();
+      })
+      .then((data) => {
+          var s= data.feed.entry[0].content.$t.split(",");
+          var title= data.feed.entry[0].title.$t;
+          var s1= s[4].split("contact: ");
+          var contact=s1[1];
+          var s2= s[5].split("mail: ");
+          var mail=s2[1];
+          document.getElementById("title").innerHTML = title;
+          document.getElementById("contact").innerHTML = contact;
+          document.getElementById("mail").innerHTML = mail;
+        })
+        .catch();
+    }
+  </script>
+  <script>
+  function myFunction1() {
+    fetch('https://spreadsheets.google.com/feeds/list/1SqrjV1tI_0N-Utiv5TYzYYhonBFGf_72o6XaanFvLwo/od6/public/basic?alt=json')
+    .then((response) => {
+      return response.json();
+    })
+    .then((data) => {
+        var s= data.feed.entry[1].content.$t.split(",");
+        var title= data.feed.entry[1].title.$t;
+        var s1= s[4].split("contact: ");
+        var contact=s1[1];
+        var s2= s[5].split("mail: ");
+        var mail=s2[1];
+        document.getElementById("title").innerHTML = title;
+        document.getElementById("contact").innerHTML = contact;
+        document.getElementById("mail").innerHTML = mail;
+      })
+      .catch();
+  }
+</script>
+  <script>
+  function myFunction2() {
+    fetch('https://spreadsheets.google.com/feeds/list/1SqrjV1tI_0N-Utiv5TYzYYhonBFGf_72o6XaanFvLwo/od6/public/basic?alt=json')
+    .then((response) => {
+      return response.json();
+    })
+    .then((data) => {
+        var s= data.feed.entry[2].content.$t.split(",");
+        var title= data.feed.entry[2].title.$t;
+        var s1= s[4].split("contact: ");
+        var contact=s1[1];
+        var s2= s[5].split("mail: ");
+        var mail=s2[1];
+        document.getElementById("title").innerHTML = title;
+        document.getElementById("contact").innerHTML = contact;
+        document.getElementById("mail").innerHTML = mail;
+      })
+      .catch();
+  }
+</script>
+<script>
+function myFunction3() {
+  fetch('https://spreadsheets.google.com/feeds/list/1SqrjV1tI_0N-Utiv5TYzYYhonBFGf_72o6XaanFvLwo/od6/public/basic?alt=json')
+  .then((response) => {
+    return response.json();
+  })
+  .then((data) => {
+      var s= data.feed.entry[3].content.$t.split(",");
+      var title= data.feed.entry[3].title.$t;
+      var s1= s[4].split("contact: ");
+      var contact=s1[1];
+      var s2= s[5].split("mail: ");
+      var mail=s2[1];
+      document.getElementById("title").innerHTML = title;
+      document.getElementById("contact").innerHTML = contact;
+      document.getElementById("mail").innerHTML = mail;
+    })
+    .catch();
+}
+</script>
+<script>
+function myFunction4() {
+  fetch('https://spreadsheets.google.com/feeds/list/1SqrjV1tI_0N-Utiv5TYzYYhonBFGf_72o6XaanFvLwo/od6/public/basic?alt=json')
+  .then((response) => {
+    return response.json();
+  })
+  .then((data) => {
+      var s= data.feed.entry[4].content.$t.split(",");
+      var title= data.feed.entry[4].title.$t;
+      var s1= s[4].split("contact: ");
+      var contact=s1[1];
+      var s2= s[5].split("mail: ");
+      var mail=s2[1];
+      document.getElementById("title").innerHTML = title;
+      document.getElementById("contact").innerHTML = contact;
+      document.getElementById("mail").innerHTML = mail;
+    })
+    .catch();
+}
+</script>
+<script>
+function myFunction5() {
+  fetch('https://spreadsheets.google.com/feeds/list/1SqrjV1tI_0N-Utiv5TYzYYhonBFGf_72o6XaanFvLwo/od6/public/basic?alt=json')
+  .then((response) => {
+    return response.json();
+  })
+  .then((data) => {
+      var s= data.feed.entry[5].content.$t.split(",");
+      var title= data.feed.entry[5].title.$t;
+      var s1= s[4].split("contact: ");
+      var contact=s1[1];
+      var s2= s[5].split("mail: ");
+      var mail=s2[1];
+      document.getElementById("title").innerHTML = title;
+      document.getElementById("contact").innerHTML = contact;
+      document.getElementById("mail").innerHTML = mail;
+    })
+    .catch();
+}
+</script>
+<script>
+function myFunction6() {
+  fetch('https://spreadsheets.google.com/feeds/list/1SqrjV1tI_0N-Utiv5TYzYYhonBFGf_72o6XaanFvLwo/od6/public/basic?alt=json')
+  .then((response) => {
+    return response.json();
+  })
+  .then((data) => {
+      var s= data.feed.entry[6].content.$t.split(",");
+      var title= data.feed.entry[6].title.$t;
+      var s1= s[4].split("contact: ");
+      var contact=s1[1];
+      var s2= s[5].split("mail: ");
+      var mail=s2[1];
+      document.getElementById("title").innerHTML = title;
+      document.getElementById("contact").innerHTML = contact;
+      document.getElementById("mail").innerHTML = mail;
+    })
+    .catch();
+}
+</script>
+<script>
+function myFunction7() {
+  fetch('https://spreadsheets.google.com/feeds/list/1SqrjV1tI_0N-Utiv5TYzYYhonBFGf_72o6XaanFvLwo/od6/public/basic?alt=json')
+  .then((response) => {
+    return response.json();
+  })
+  .then((data) => {
+      var s= data.feed.entry[7].content.$t.split(",");
+      var title= data.feed.entry[7].title.$t;
+      var s1= s[4].split("contact: ");
+      var contact=s1[1];
+      var s2= s[5].split("mail: ");
+      var mail=s2[1];
+      document.getElementById("title").innerHTML = title;
+      document.getElementById("contact").innerHTML = contact;
+      document.getElementById("mail").innerHTML = mail;
+    })
+    .catch();
+}
+</script>
+<script>
+function myFunction8() {
+  fetch('https://spreadsheets.google.com/feeds/list/1SqrjV1tI_0N-Utiv5TYzYYhonBFGf_72o6XaanFvLwo/od6/public/basic?alt=json')
+  .then((response) => {
+    return response.json();
+  })
+  .then((data) => {
+      var s= data.feed.entry[8].content.$t.split(",");
+      var title= data.feed.entry[8].title.$t;
+      var s1= s[4].split("contact: ");
+      var contact=s1[1];
+      var s2= s[5].split("mail: ");
+      var mail=s2[1];
+      document.getElementById("title").innerHTML = title;
+      document.getElementById("contact").innerHTML = contact;
+      document.getElementById("mail").innerHTML = mail;
+    })
+    .catch();
+}
+</script>
+<script>
+function myFunction9() {
+  fetch('https://spreadsheets.google.com/feeds/list/1SqrjV1tI_0N-Utiv5TYzYYhonBFGf_72o6XaanFvLwo/od6/public/basic?alt=json')
+  .then((response) => {
+    return response.json();
+  })
+  .then((data) => {
+      var s= data.feed.entry[9].content.$t.split(",");
+      var title= data.feed.entry[9].title.$t;
+      var s1= s[4].split("contact: ");
+      var contact=s1[1];
+      var s2= s[5].split("mail: ");
+      var mail=s2[1];
+      document.getElementById("title").innerHTML = title;
+      document.getElementById("contact").innerHTML = contact;
+      document.getElementById("mail").innerHTML = mail;
+    })
+    .catch();
+}
+</script>
+<script>
+fetch('https://spreadsheets.google.com/feeds/list/1SqrjV1tI_0N-Utiv5TYzYYhonBFGf_72o6XaanFvLwo/od6/public/basic?alt=json')
+.then((response) => {
+  return response.json();
+})
+.then((data) => {
+  {
+
+    var s= data.feed.entry[0].content.$t.split(",");
+    console.log('Hospital 01-Complete Data:',s);
+
+    var title= data.feed.entry[0].title.$t;
+    document.getElementById("TitleText0").innerHTML = title;
+
+    var s1= s[0].split("total: ");
+    var total=s1[1];
+    document.getElementById("TotalText0").innerHTML = total;
+
+    var s2= s[1].split("vacant: ");
+    var vacant=s2[1];
+    document.getElementById("VacantText0").innerHTML = vacant;
+
+    var s3= s[2].split("lastupdated:  ");
+    var last=s3[1];
+    document.getElementById("LastText0").innerHTML = last;
+
+    var s4= s[3].split("managementagency: ");
+    var subtitle=s4[1];
+    document.getElementById("SubtitleText0").innerHTML = subtitle;
+}
+
+{
+
+    var s= data.feed.entry[1].content.$t.split(",");
+    console.log('Hospital 01-Complete Data:',s);
+
+    var title= data.feed.entry[1].title.$t;
+    document.getElementById("TitleText1").innerHTML = title;
+
+    var s1= s[0].split("total: ");
+    var total=s1[1];
+    document.getElementById("TotalText1").innerHTML = total;
+
+    var s2= s[1].split("vacant: ");
+    var vacant=s2[1];
+    document.getElementById("VacantText1").innerHTML = vacant;
+
+    var s3= s[2].split("lastupdated:  ");
+    var last=s3[1];
+    document.getElementById("LastText1").innerHTML = last;
+
+    var s4= s[3].split("managementagency: ");
+    var subtitle=s4[1];
+    document.getElementById("SubtitleText1").innerHTML = subtitle;
+}
+
+{
+
+    var s= data.feed.entry[2].content.$t.split(",");
+    console.log('Hospital 01-Complete Data:',s);
+
+    var title= data.feed.entry[2].title.$t;
+    document.getElementById("TitleText2").innerHTML = title;
+
+    var s1= s[0].split("total: ");
+    var total=s1[1];
+    document.getElementById("TotalText2").innerHTML = total;
+
+    var s2= s[1].split("vacant: ");
+    var vacant=s2[1];
+    document.getElementById("VacantText2").innerHTML = vacant;
+
+    var s3= s[2].split("lastupdated:  ");
+    var last=s3[1];
+    document.getElementById("LastText2").innerHTML = last;
+
+    var s4= s[3].split("managementagency: ");
+    var subtitle=s4[1];
+    document.getElementById("SubtitleText2").innerHTML = subtitle;
+}
+
+{
+
+    var s= data.feed.entry[3].content.$t.split(",");
+    console.log('Hospital 01-Complete Data:',s);
+
+    var title= data.feed.entry[3].title.$t;
+    document.getElementById("TitleText3").innerHTML = title;
+
+    var s1= s[0].split("total: ");
+    var total=s1[1];
+    document.getElementById("TotalText3").innerHTML = total;
+
+    var s2= s[1].split("vacant: ");
+    var vacant=s2[1];
+    document.getElementById("VacantText3").innerHTML = vacant;
+
+    var s3= s[2].split("lastupdated:  ");
+    var last=s3[1];
+    document.getElementById("LastText3").innerHTML = last;
+
+    var s4= s[3].split("managementagency: ");
+    var subtitle=s4[1];
+    document.getElementById("SubtitleText3").innerHTML = subtitle;
+}
+
+{
+
+    var s= data.feed.entry[4].content.$t.split(",");
+    console.log('Hospital 01-Complete Data:',s);
+
+    var title= data.feed.entry[4].title.$t;
+    document.getElementById("TitleText4").innerHTML = title;
+
+    var s1= s[0].split("total: ");
+    var total=s1[1];
+    document.getElementById("TotalText4").innerHTML = total;
+
+    var s2= s[1].split("vacant: ");
+    var vacant=s2[1];
+    document.getElementById("VacantText4").innerHTML = vacant;
+
+    var s3= s[2].split("lastupdated:  ");
+    var last=s3[1];
+    document.getElementById("LastText4").innerHTML = last;
+
+    var s4= s[3].split("managementagency: ");
+    var subtitle=s4[1];
+    document.getElementById("SubtitleText4").innerHTML = subtitle;
+}
+
+{
+
+    var s= data.feed.entry[5].content.$t.split(",");
+    console.log('Hospital 01-Complete Data:',s);
+
+    var title= data.feed.entry[5].title.$t;
+    document.getElementById("TitleText5").innerHTML = title;
+
+    var s1= s[0].split("total: ");
+    var total=s1[1];
+    document.getElementById("TotalText5").innerHTML = total;
+
+    var s2= s[1].split("vacant: ");
+    var vacant=s2[1];
+    document.getElementById("VacantText5").innerHTML = vacant;
+
+    var s3= s[2].split("lastupdated:  ");
+    var last=s3[1];
+    document.getElementById("LastText5").innerHTML = last;
+
+    var s4= s[3].split("managementagency: ");
+    var subtitle=s4[1];
+    document.getElementById("SubtitleText5").innerHTML = subtitle;
+}
+
+{
+
+    var s= data.feed.entry[6].content.$t.split(",");
+    console.log('Hospital 01-Complete Data:',s);
+
+    var title= data.feed.entry[6].title.$t;
+    document.getElementById("TitleText6").innerHTML = title;
+
+    var s1= s[0].split("total: ");
+    var total=s1[1];
+    document.getElementById("TotalText6").innerHTML = total;
+
+    var s2= s[1].split("vacant: ");
+    var vacant=s2[1];
+    document.getElementById("VacantText6").innerHTML = vacant;
+
+    var s3= s[2].split("lastupdated:  ");
+    var last=s3[1];
+    document.getElementById("LastText6").innerHTML = last;
+
+    var s4= s[3].split("managementagency: ");
+    var subtitle=s4[1];
+    document.getElementById("SubtitleText6").innerHTML = subtitle;
+}
+
+{
+
+    var s= data.feed.entry[7].content.$t.split(",");
+    console.log('Hospital 01-Complete Data:',s);
+
+    var title= data.feed.entry[7].title.$t;
+    document.getElementById("TitleText7").innerHTML = title;
+
+    var s1= s[0].split("total: ");
+    var total=s1[1];
+    document.getElementById("TotalText7").innerHTML = total;
+
+    var s2= s[1].split("vacant: ");
+    var vacant=s2[1];
+    document.getElementById("VacantText7").innerHTML = vacant;
+
+    var s3= s[2].split("lastupdated:  ");
+    var last=s3[1];
+    document.getElementById("LastText7").innerHTML = last;
+
+    var s4= s[3].split("managementagency: ");
+    var subtitle=s4[1];
+    document.getElementById("SubtitleText7").innerHTML = subtitle;
+}
+
+{
+
+    var s= data.feed.entry[8].content.$t.split(",");
+    console.log('Hospital 01-Complete Data:',s);
+
+    var title= data.feed.entry[8].title.$t;
+    document.getElementById("TitleText8").innerHTML = title;
+
+    var s1= s[0].split("total: ");
+    var total=s1[1];
+    document.getElementById("TotalText8").innerHTML = total;
+
+    var s2= s[1].split("vacant: ");
+    var vacant=s2[1];
+    document.getElementById("VacantText8").innerHTML = vacant;
+
+    var s3= s[2].split("lastupdated:  ");
+    var last=s3[1];
+    document.getElementById("LastText8").innerHTML = last;
+
+    var s4= s[3].split("managementagency: ");
+    var subtitle=s4[1];
+    document.getElementById("SubtitleText8").innerHTML = subtitle;
+}
+
+{
+
+    var s= data.feed.entry[9].content.$t.split(",");
+    console.log('Hospital 01-Complete Data:',s);
+
+    var title= data.feed.entry[9].title.$t;
+    document.getElementById("TitleText9").innerHTML = title;
+
+    var s1= s[0].split("total: ");
+    var total=s1[1];
+    document.getElementById("TotalText9").innerHTML = total;
+
+    var s2= s[1].split("vacant: ");
+    var vacant=s2[1];
+    document.getElementById("VacantText9").innerHTML = vacant;
+
+    var s3= s[2].split("lastupdated:  ");
+    var last=s3[1];
+    document.getElementById("LastText9").innerHTML = last;
+
+    var s4= s[3].split("managementagency: ");
+    var subtitle=s4[1];
+    document.getElementById("SubtitleText9").innerHTML = subtitle;
+}
+})
+.catch();
+
+</script>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+<script>
+  $(document).ready(function(){
+    $('.click').click(function(){
+      $('.popup_box').css("display", "block");
+    });
+    $('.btn1').click(function(){
+      $('.popup_box').css("display", "none");
+    });
+  });
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+fetch('https://spreadsheets.google.com/feeds/list/127azwqwBtM9GS9HyWmjB_trpQupKIRGP2jpPemHV5gc/od6/public/basic?alt=json')
+.then((response) => {
+  return response.json();
+})
+.then((data) => {
+  {
+
+    var s= data.feed.entry[0].content.$t.split(",");
+    console.log('Hospital 01-Complete Data:',s);
+
+    var title= data.feed.entry[0].title.$t;
+    document.getElementById("TitleText0").innerHTML = title;
+
+    var s1= s[0].split("total: ");
+    var total=s1[1];
+    document.getElementById("TotalText0").innerHTML = total;
+
+    var s2= s[1].split("vacant: ");
+    var vacant=s2[1];
+    document.getElementById("VacantText0").innerHTML = vacant;
+
+    var s3= s[2].split("lastupdated:  ");
+    var last=s3[1];
+    document.getElementById("LastText0").innerHTML = last;
+
+    var s4= s[3].split("manager: ");
+    var subtitle=s4[1];
+    document.getElementById("SubtitleText0").innerHTML = subtitle;
+}
+
+{
+
+    var s= data.feed.entry[1].content.$t.split(",");
+    console.log('Hospital 01-Complete Data:',s);
+
+    var title= data.feed.entry[1].title.$t;
+    document.getElementById("TitleText1").innerHTML = title;
+
+    var s1= s[0].split("total: ");
+    var total=s1[1];
+    document.getElementById("TotalText1").innerHTML = total;
+
+    var s2= s[1].split("vacant: ");
+    var vacant=s2[1];
+    document.getElementById("VacantText1").innerHTML = vacant;
+
+    var s3= s[2].split("lastupdated:  ");
+    var last=s3[1];
+    document.getElementById("LastText1").innerHTML = last;
+
+    var s4= s[3].split("manager: ");
+    var subtitle=s4[1];
+    document.getElementById("SubtitleText1").innerHTML = subtitle;
+}
+
+{
+
+    var s= data.feed.entry[2].content.$t.split(",");
+    console.log('Hospital 01-Complete Data:',s);
+
+    var title= data.feed.entry[2].title.$t;
+    document.getElementById("TitleText2").innerHTML = title;
+
+    var s1= s[0].split("total: ");
+    var total=s1[1];
+    document.getElementById("TotalText2").innerHTML = total;
+
+    var s2= s[1].split("vacant: ");
+    var vacant=s2[1];
+    document.getElementById("VacantText2").innerHTML = vacant;
+
+    var s3= s[2].split("lastupdated:  ");
+    var last=s3[1];
+    document.getElementById("LastText2").innerHTML = last;
+
+    var s4= s[3].split("manager: ");
+    var subtitle=s4[1];
+    document.getElementById("SubtitleText2").innerHTML = subtitle;
+}
+
+{
+
+    var s= data.feed.entry[3].content.$t.split(",");
+    console.log('Hospital 01-Complete Data:',s);
+
+    var title= data.feed.entry[3].title.$t;
+    document.getElementById("TitleText3").innerHTML = title;
+
+    var s1= s[0].split("total: ");
+    var total=s1[1];
+    document.getElementById("TotalText3").innerHTML = total;
+
+    var s2= s[1].split("vacant: ");
+    var vacant=s2[1];
+    document.getElementById("VacantText3").innerHTML = vacant;
+
+    var s3= s[2].split("lastupdated:  ");
+    var last=s3[1];
+    document.getElementById("LastText3").innerHTML = last;
+
+    var s4= s[3].split("manager: ");
+    var subtitle=s4[1];
+    document.getElementById("SubtitleText3").innerHTML = subtitle;
+}
+
+{
+
+    var s= data.feed.entry[4].content.$t.split(",");
+    console.log('Hospital 01-Complete Data:',s);
+
+    var title= data.feed.entry[4].title.$t;
+    document.getElementById("TitleText4").innerHTML = title;
+
+    var s1= s[0].split("total: ");
+    var total=s1[1];
+    document.getElementById("TotalText4").innerHTML = total;
+
+    var s2= s[1].split("vacant: ");
+    var vacant=s2[1];
+    document.getElementById("VacantText4").innerHTML = vacant;
+
+    var s3= s[2].split("lastupdated:  ");
+    var last=s3[1];
+    document.getElementById("LastText4").innerHTML = last;
+
+    var s4= s[3].split("manager: ");
+    var subtitle=s4[1];
+    document.getElementById("SubtitleText4").innerHTML = subtitle;
+}
+
+{
+
+    var s= data.feed.entry[5].content.$t.split(",");
+    console.log('Hospital 01-Complete Data:',s);
+
+    var title= data.feed.entry[5].title.$t;
+    document.getElementById("TitleText5").innerHTML = title;
+
+    var s1= s[0].split("total: ");
+    var total=s1[1];
+    document.getElementById("TotalText5").innerHTML = total;
+
+    var s2= s[1].split("vacant: ");
+    var vacant=s2[1];
+    document.getElementById("VacantText5").innerHTML = vacant;
+
+    var s3= s[2].split("lastupdated:  ");
+    var last=s3[1];
+    document.getElementById("LastText5").innerHTML = last;
+
+    var s4= s[3].split("manager: ");
+    var subtitle=s4[1];
+    document.getElementById("SubtitleText5").innerHTML = subtitle;
+}
+
+{
+
+    var s= data.feed.entry[6].content.$t.split(",");
+    console.log('Hospital 01-Complete Data:',s);
+
+    var title= data.feed.entry[6].title.$t;
+    document.getElementById("TitleText6").innerHTML = title;
+
+    var s1= s[0].split("total: ");
+    var total=s1[1];
+    document.getElementById("TotalText6").innerHTML = total;
+
+    var s2= s[1].split("vacant: ");
+    var vacant=s2[1];
+    document.getElementById("VacantText6").innerHTML = vacant;
+
+    var s3= s[2].split("lastupdated:  ");
+    var last=s3[1];
+    document.getElementById("LastText6").innerHTML = last;
+
+    var s4= s[3].split("manager: ");
+    var subtitle=s4[1];
+    document.getElementById("SubtitleText6").innerHTML = subtitle;
+}
+
+{
+
+    var s= data.feed.entry[7].content.$t.split(",");
+    console.log('Hospital 01-Complete Data:',s);
+
+    var title= data.feed.entry[7].title.$t;
+    document.getElementById("TitleText7").innerHTML = title;
+
+    var s1= s[0].split("total: ");
+    var total=s1[1];
+    document.getElementById("TotalText7").innerHTML = total;
+
+    var s2= s[1].split("vacant: ");
+    var vacant=s2[1];
+    document.getElementById("VacantText7").innerHTML = vacant;
+
+    var s3= s[2].split("lastupdated:  ");
+    var last=s3[1];
+    document.getElementById("LastText7").innerHTML = last;
+
+    var s4= s[3].split("manager: ");
+    var subtitle=s4[1];
+    document.getElementById("SubtitleText7").innerHTML = subtitle;
+}
+
+{
+
+    var s= data.feed.entry[8].content.$t.split(",");
+    console.log('Hospital 01-Complete Data:',s);
+
+    var title= data.feed.entry[8].title.$t;
+    document.getElementById("TitleText8").innerHTML = title;
+
+    var s1= s[0].split("total: ");
+    var total=s1[1];
+    document.getElementById("TotalText8").innerHTML = total;
+
+    var s2= s[1].split("vacant: ");
+    var vacant=s2[1];
+    document.getElementById("VacantText8").innerHTML = vacant;
+
+    var s3= s[2].split("lastupdated:  ");
+    var last=s3[1];
+    document.getElementById("LastText8").innerHTML = last;
+
+    var s4= s[3].split("manager: ");
+    var subtitle=s4[1];
+    document.getElementById("SubtitleText8").innerHTML = subtitle;
+}
+
+{
+
+    var s= data.feed.entry[9].content.$t.split(",");
+    console.log('Hospital 01-Complete Data:',s);
+
+    var title= data.feed.entry[9].title.$t;
+    document.getElementById("TitleText9").innerHTML = title;
+
+    var s1= s[0].split("total: ");
+    var total=s1[1];
+    document.getElementById("TotalText9").innerHTML = total;
+
+    var s2= s[1].split("vacant: ");
+    var vacant=s2[1];
+    document.getElementById("VacantText9").innerHTML = vacant;
+
+    var s3= s[2].split("lastupdated:  ");
+    var last=s3[1];
+    document.getElementById("LastText9").innerHTML = last;
+
+    var s4= s[3].split("manager: ");
+    var subtitle=s4[1];
+    document.getElementById("SubtitleText9").innerHTML = subtitle;
+}
+})
+.catch();
+
+</script>
+<script>
+function myFunction0() {
+  fetch('https://spreadsheets.google.com/feeds/list/127azwqwBtM9GS9HyWmjB_trpQupKIRGP2jpPemHV5gc/od6/public/basic?alt=json')
+  .then((response) => {
+    return response.json();
+  })
+  .then((data) => {
+      var s= data.feed.entry[0].content.$t.split(",");
+      var title= data.feed.entry[0].title.$t;
+      var s1= s[4].split("contact: ");
+      var contact=s1[1];
+      var s2= s[5].split("mail: ");
+      var mail=s2[1];
+      var s3= s[3].split("manager: Manager: ");
+      var manager=s3[1];
+      document.getElementById("manager").innerHTML = manager;
+      document.getElementById("title").innerHTML = title;
+      document.getElementById("contact").innerHTML = contact;
+      document.getElementById("mail").innerHTML = mail;
+    })
+    .catch();
+}
+</script>
+<script>
+function myFunction1() {
+  fetch('https://spreadsheets.google.com/feeds/list/127azwqwBtM9GS9HyWmjB_trpQupKIRGP2jpPemHV5gc/od6/public/basic?alt=json')
+  .then((response) => {
+    return response.json();
+  })
+  .then((data) => {
+      var s= data.feed.entry[1].content.$t.split(",");
+      var title= data.feed.entry[1].title.$t;
+      var s1= s[4].split("contact: ");
+      var contact=s1[1];
+      var s2= s[5].split("mail: ");
+      var mail=s2[1];
+      var s3= s[3].split("manager: Manager: ");
+      var manager=s3[1];
+      document.getElementById("manager").innerHTML = manager;
+      document.getElementById("title").innerHTML = title;
+      document.getElementById("contact").innerHTML = contact;
+      document.getElementById("mail").innerHTML = mail;
+    })
+    .catch();
+}
+</script>
+<script>
+function myFunction2() {
+  fetch('https://spreadsheets.google.com/feeds/list/127azwqwBtM9GS9HyWmjB_trpQupKIRGP2jpPemHV5gc/od6/public/basic?alt=json')
+  .then((response) => {
+    return response.json();
+  })
+  .then((data) => {
+      var s= data.feed.entry[2].content.$t.split(",");
+      var title= data.feed.entry[2].title.$t;
+      var s1= s[4].split("contact: ");
+      var contact=s1[1];
+      var s2= s[5].split("mail: ");
+      var mail=s2[1];
+      var s3= s[3].split("manager: Manager: ");
+      var manager=s3[1];
+      document.getElementById("manager").innerHTML = manager;
+      document.getElementById("title").innerHTML = title;
+      document.getElementById("contact").innerHTML = contact;
+      document.getElementById("mail").innerHTML = mail;
+    })
+    .catch();
+}
+</script>
+<script>
+function myFunction3() {
+  fetch('https://spreadsheets.google.com/feeds/list/127azwqwBtM9GS9HyWmjB_trpQupKIRGP2jpPemHV5gc/od6/public/basic?alt=json')
+  .then((response) => {
+    return response.json();
+  })
+  .then((data) => {
+      var s= data.feed.entry[3].content.$t.split(",");
+      var title= data.feed.entry[3].title.$t;
+      var s1= s[4].split("contact: ");
+      var contact=s1[1];
+      var s2= s[5].split("mail: ");
+      var mail=s2[1];
+      var s3= s[3].split("manager: Manager: ");
+      var manager=s3[1];
+      document.getElementById("manager").innerHTML = manager;
+      document.getElementById("title").innerHTML = title;
+      document.getElementById("contact").innerHTML = contact;
+      document.getElementById("mail").innerHTML = mail;
+    })
+    .catch();
+}
+</script>
+<script>
+function myFunction4() {
+  fetch('https://spreadsheets.google.com/feeds/list/127azwqwBtM9GS9HyWmjB_trpQupKIRGP2jpPemHV5gc/od6/public/basic?alt=json')
+  .then((response) => {
+    return response.json();
+  })
+  .then((data) => {
+      var s= data.feed.entry[4].content.$t.split(",");
+      var title= data.feed.entry[4].title.$t;
+      var s1= s[4].split("contact: ");
+      var contact=s1[1];
+      var s2= s[5].split("mail: ");
+      var mail=s2[1];
+      var s3= s[3].split("manager: Manager: ");
+      var manager=s3[1];
+      document.getElementById("manager").innerHTML = manager;
+      document.getElementById("title").innerHTML = title;
+      document.getElementById("contact").innerHTML = contact;
+      document.getElementById("mail").innerHTML = mail;
+    })
+    .catch();
+}
+</script>
+<script>
+function myFunction5() {
+  fetch('https://spreadsheets.google.com/feeds/list/127azwqwBtM9GS9HyWmjB_trpQupKIRGP2jpPemHV5gc/od6/public/basic?alt=json')
+  .then((response) => {
+    return response.json();
+  })
+  .then((data) => {
+      var s= data.feed.entry[5].content.$t.split(",");
+      var title= data.feed.entry[5].title.$t;
+      var s1= s[4].split("contact: ");
+      var contact=s1[1];
+      var s2= s[5].split("mail: ");
+      var mail=s2[1];
+      var s3= s[3].split("manager: Manager: ");
+      var manager=s3[1];
+      document.getElementById("manager").innerHTML = manager;
+      document.getElementById("title").innerHTML = title;
+      document.getElementById("contact").innerHTML = contact;
+      document.getElementById("mail").innerHTML = mail;
+    })
+    .catch();
+}
+</script>
+<script>
+function myFunction6() {
+  fetch('https://spreadsheets.google.com/feeds/list/127azwqwBtM9GS9HyWmjB_trpQupKIRGP2jpPemHV5gc/od6/public/basic?alt=json')
+  .then((response) => {
+    return response.json();
+  })
+  .then((data) => {
+      var s= data.feed.entry[6].content.$t.split(",");
+      var title= data.feed.entry[6].title.$t;
+      var s1= s[4].split("contact: ");
+      var contact=s1[1];
+      var s2= s[5].split("mail: ");
+      var mail=s2[1];
+      var s3= s[3].split("manager: Manager: ");
+      var manager=s3[1];
+      document.getElementById("manager").innerHTML = manager;
+      document.getElementById("title").innerHTML = title;
+      document.getElementById("contact").innerHTML = contact;
+      document.getElementById("mail").innerHTML = mail;
+    })
+    .catch();
+}
+</script>
+<script>
+function myFunction7() {
+  fetch('https://spreadsheets.google.com/feeds/list/127azwqwBtM9GS9HyWmjB_trpQupKIRGP2jpPemHV5gc/od6/public/basic?alt=json')
+  .then((response) => {
+    return response.json();
+  })
+  .then((data) => {
+      var s= data.feed.entry[7].content.$t.split(",");
+      var title= data.feed.entry[7].title.$t;
+      var s1= s[4].split("contact: ");
+      var contact=s1[1];
+      var s2= s[5].split("mail: ");
+      var mail=s2[1];
+      var s3= s[3].split("manager: Manager: ");
+      var manager=s3[1];
+      document.getElementById("manager").innerHTML = manager;
+      document.getElementById("title").innerHTML = title;
+      document.getElementById("contact").innerHTML = contact;
+      document.getElementById("mail").innerHTML = mail;
+    })
+    .catch();
+}
+</script>
+<script>
+function myFunction8() {
+  fetch('https://spreadsheets.google.com/feeds/list/127azwqwBtM9GS9HyWmjB_trpQupKIRGP2jpPemHV5gc/od6/public/basic?alt=json')
+  .then((response) => {
+    return response.json();
+  })
+  .then((data) => {
+      var s= data.feed.entry[8].content.$t.split(",");
+      var title= data.feed.entry[8].title.$t;
+      var s1= s[4].split("contact: ");
+      var contact=s1[1];
+      var s2= s[5].split("mail: ");
+      var mail=s2[1];
+      var s3= s[3].split("manager: Manager: ");
+      var manager=s3[1];
+      document.getElementById("manager").innerHTML = manager;
+      document.getElementById("title").innerHTML = title;
+      document.getElementById("contact").innerHTML = contact;
+      document.getElementById("mail").innerHTML = mail;
+    })
+    .catch();
+}
+</script>
+<script>
+function myFunction9() {
+  fetch('https://spreadsheets.google.com/feeds/list/127azwqwBtM9GS9HyWmjB_trpQupKIRGP2jpPemHV5gc/od6/public/basic?alt=json')
+  .then((response) => {
+    return response.json();
+  })
+  .then((data) => {
+      var s= data.feed.entry[9].content.$t.split(",");
+      var title= data.feed.entry[9].title.$t;
+      var s1= s[4].split("contact: ");
+      var contact=s1[1];
+      var s2= s[5].split("mail: ");
+      var mail=s2[1];
+      var s3= s[3].split("manager: Manager: ");
+      var manager=s3[1];
+      document.getElementById("manager").innerHTML = manager;
+      document.getElementById("title").innerHTML = title;
+      document.getElementById("contact").innerHTML = contact;
+      document.getElementById("mail").innerHTML = mail;
+    })
+    .catch();
+}
+</script>
+  </head>
+<my-app>loading...</my-app>
