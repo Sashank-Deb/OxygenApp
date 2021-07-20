@@ -28,7 +28,7 @@ const appRoutes: Routes = [
 ];
 @NgModule({
   imports:[ BrowserModule, FormsModule,CommonModule, RouterModule.forRoot(appRoutes) ],
-  declarations: [ AppComponent, HelloComponent,Symptoms,AboutUs,ContactUs,Services,Doctor,Hospital,Ambulance,Construction,Link ],
+  declarations: [ AppComponent, HelloComponent,Symptoms,AboutUs,ContactUs,Services,Doctor,Hospital,Ambulance,Construction,Link],
   bootstrap:    [ AppComponent ],
   exports: [RouterModule]
 })
