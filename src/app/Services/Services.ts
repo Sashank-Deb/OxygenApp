@@ -4,6 +4,4 @@ import { Component, VERSION } from '@angular/core';
   templateUrl: './Services.html',
   styleUrls: [ './Services.css' ]
 })
-export class Services  {
-
-}
+export class Services  {}

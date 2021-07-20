@@ -985,6 +985,167 @@ function myFunction9() {
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  
+    <script>
+    $(document).ready(function(){
+    $('#IN-AN').click(function click(){
+      $('#dropdown').val($(this).data('val')).trigger('change');});
+    $('#IN-AP').click(function click(){
+      $('#dropdown').val($(this).data('val')).trigger('change');});
+    $('#IN-AR').click(function click(){
+      $('#dropdown').val($(this).data('val')).trigger('change');});
+    $('#IN-AS').click(function click(){
+      $('#dropdown').val($(this).data('val')).trigger('change');});
+    $('#IN-BR').click(function click(){
+      $('#dropdown').val($(this).data('val')).trigger('change');});
+    $('#IN-CH').click(function click(){
+      $('#dropdown').val($(this).data('val')).trigger('change');});
+    $('#IN-CT').click(function click(){
+      $('#dropdown').val($(this).data('val')).trigger('change');});
+    $('#IN-DN').click(function click(){
+      $('#dropdown').val($(this).data('val')).trigger('change');});
+    $('#IN-DL').click(function click(){
+      $('#dropdown').val($(this).data('val')).trigger('change');});
+    $('#IN-GA').click(function click(){
+      $('#dropdown').val($(this).data('val')).trigger('change');});
+    $('#IN-GJ').click(function click(){
+      $('#dropdown').val($(this).data('val')).trigger('change');});
+    $('#IN-HR').click(function click(){
+      $('#dropdown').val($(this).data('val')).trigger('change');});
+    $('#IN-HP').click(function click(){
+      $('#dropdown').val($(this).data('val')).trigger('change');});
+    $('#IN-JK').click(function click(){
+      $('#dropdown').val($(this).data('val')).trigger('change');});
+    $('#IN-JH').click(function click(){
+      $('#dropdown').val($(this).data('val')).trigger('change');});
+    $('#IN-KA').click(function click(){
+      $('#dropdown').val($(this).data('val')).trigger('change');});
+    $('#IN-KL').click(function click(){
+      $('#dropdown').val($(this).data('val')).trigger('change');});
+    $('#IN-LA').click(function click(){
+      $('#dropdown').val($(this).data('val')).trigger('change');});
+    $('#IN-LD').click(function click(){
+      $('#dropdown').val($(this).data('val')).trigger('change');});
+    $('#IN-MP').click(function click(){
+      $('#dropdown').val($(this).data('val')).trigger('change');});
+    $('#IN-MH').click(function click(){
+      $('#dropdown').val($(this).data('val')).trigger('change');});
+    $('#IN-MN').click(function click(){
+      $('#dropdown').val($(this).data('val')).trigger('change');});
+    $('#IN-ML').click(function click(){
+      $('#dropdown').val($(this).data('val')).trigger('change');});
+    $('#IN-MZ').click(function click(){
+      $('#dropdown').val($(this).data('val')).trigger('change');});
+    $('#IN-NL').click(function click(){
+      $('#dropdown').val($(this).data('val')).trigger('change');});
+    $('#IN-OR').click(function click(){
+      $('#dropdown').val($(this).data('val')).trigger('change');});
+    $('#IN-PY').click(function click(){
+      $('#dropdown').val($(this).data('val')).trigger('change');});
+    $('#IN-PB').click(function click(){
+      $('#dropdown').val($(this).data('val')).trigger('change');});
+    $('#IN-RJ').click(function click(){
+      $('#dropdown').val($(this).data('val')).trigger('change');});
+    $('#IN-SK').click(function click(){
+      $('#dropdown').val($(this).data('val')).trigger('change');});
+    $('#IN-TN').click(function click(){
+      $('#dropdown').val($(this).data('val')).trigger('change');});
+    $('#IN-TG').click(function click(){
+      $('#dropdown').val($(this).data('val')).trigger('change');});
+    $('#IN-TR').click(function click(){
+      $('#dropdown').val($(this).data('val')).trigger('change');});
+    $('#IN-UP').click(function click(){
+      $('#dropdown').val($(this).data('val')).trigger('change');});
+    $('#IN-UT').click(function click(){
+      $('#dropdown').val($(this).data('val')).trigger('change');});
+    $('#IN-WB').click(function click(){
+      $('#dropdown').val($(this).data('val')).trigger('change');});
+
+    });
+    </script>
+     <script>
+
+      fetch('https://api.covid19india.org/data.json')
+      .then((response) => {
+      return response.json();
+      })
+      .then((data) => {
+      var s1= data.statewise[0].active;
+      document.getElementById("myText1").innerHTML = s1;
+      const counters = document.querySelectorAll('.counter1');
+      const speed = 100; // The lower the slower
+
+      counters.forEach(counter1 => {
+        const updateCount = () => {
+          const target = +s1;
+          const count = +counter1.innerText;
+
+          // Lower inc to slow and higher to slow
+          const inc = target / speed;
+
+          // console.log(inc);
+          // console.log(count);
+
+          // Check if target is reached
+          if (count < target) {
+            // Add inc to count and output in counter
+            counter1.innerText = Math.ceil(count + inc);
+            // Call function every ms
+            setTimeout(updateCount, 1);
+          } else {
+            counter1.innerText = target;
+          }
+        };
+
+        updateCount();
+      });
+      })
+      .catch();
+      </script>
+       <script>
+        fetch('https://api.covid19india.org/data.json')
+        .then((response) => {
+          return response.json();
+        })
+        .then((data) => {
+          var s2= data.statewise[0].confirmed;
+          document.getElementById("myText2").innerHTML = s2;
+          const counters = document.querySelectorAll('.counter2');
+          const speed = 100; // The lower the slower
+
+          counters.forEach(counter2 => {
+            const updateCount = () => {
+              const target = +s2;
+              const count = +counter2.innerText;
+
+              // Lower inc to slow and higher to slow
+              const inc = target / speed;
+
+              // console.log(inc);
+              // console.log(count);
+
+              // Check if target is reached
+              if (count < target) {
+                // Add inc to count and output in counter
+                counter2.innerText = Math.ceil(count + inc);
+                // Call function every ms
+                setTimeout(updateCount, 1);
+              } else {
+                counter2.innerText = target;
+              }
+            };
+
+            updateCount();
+          });
+        })
+        fetch('https://api.covid19india.org/data.json')
+        .then((response) => {
+        return response.json();
+        })
+        .then((data) => {
+          var s5= data.statewise[0].deltaconfirmed;
+          document.getElementById("myText-dc").innerHTML = s5;
+        })
+        .catch();
+        </script>
   </head>
 <my-app>loading...</my-app>

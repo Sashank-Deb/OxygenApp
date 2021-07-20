@@ -15,7 +15,7 @@ import {Ambulance} from './Ambulance/Ambulance';
 import {Construction} from './Construction/Construction';
 import {Link} from './Link/Link';
 const appRoutes: Routes = [
-  { path: 'Symptoms', component: Symptoms },
+  { path:'Symptoms', component: Symptoms },
   {path:'aboutUs',component: AboutUs  },
   {path:'ContactUs',component:ContactUs},
   {path:'Services',component:Services},
