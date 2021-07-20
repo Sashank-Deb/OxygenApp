@@ -13,7 +13,7 @@ import {Doctor} from './Doctor/Doctor';
 import {Hospital} from './Hospital/Hospital';
 import {Ambulance} from './Ambulance/Ambulance';
 import {Construction} from './Construction/Construction';
-
+import {Link} from './Link/Link';
 const appRoutes: Routes = [
   { path: 'Symptoms', component: Symptoms },
   {path:'aboutUs',component: AboutUs  },
@@ -23,11 +23,12 @@ const appRoutes: Routes = [
   {path:'Hospital',component:Hospital},
   {path:'Ambulance',component:Ambulance},
   {path:'Construction',component:Construction},
+  {path:'Link',component:Link},
   {path:'', redirectTo:'/aboutUs',pathMatch: 'full'}
 ];
 @NgModule({
   imports:[ BrowserModule, FormsModule,CommonModule, RouterModule.forRoot(appRoutes) ],
-  declarations: [ AppComponent, HelloComponent,Symptoms,AboutUs,ContactUs,Services,Doctor,Hospital,Ambulance,Construction ],
+  declarations: [ AppComponent, HelloComponent,Symptoms,AboutUs,ContactUs,Services,Doctor,Hospital,Ambulance,Construction,Link ],
   bootstrap:    [ AppComponent ],
   exports: [RouterModule]
 })
