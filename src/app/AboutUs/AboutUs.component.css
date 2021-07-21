@@ -152,7 +152,7 @@ ul{
   }
 
   .subtitle>p{
-    font-size: 23px;
+    font-size: 2.5vw;
   }
   .subtitle1>p{
     font-size: 2.5vw;
@@ -179,7 +179,7 @@ ul{
   }
 
   .subtitle>p, .subtitle1>p{
-    font-size: 10px;
+    font-size: 1.2vw;
   }
   .text{
     font-size: 1.2vw;
