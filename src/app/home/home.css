@@ -132,7 +132,7 @@ svg path{
 .taskbar{
   list-style-type: none;
   display: grid;
-  grid-template-columns: 120px 120px 120px 120px 130px;
+  grid-template-columns: 120px 120px 120px 120px 120px 130px;
   margin-right: 25px;
   grid-gap: 5px;
   justify-content: end;
