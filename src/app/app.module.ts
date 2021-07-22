@@ -15,6 +15,7 @@ import {Ambulance} from './Ambulance/Ambulance';
 import {Construction} from './Construction/Construction';
 import {Link} from './Link/Link';
 import {home} from './home/home';
+import {admin} from './admin/admin';
 const appRoutes: Routes = [
   { path:'Symptoms', component: Symptoms },
   {path:'aboutUs',component: AboutUs  },
@@ -26,11 +27,12 @@ const appRoutes: Routes = [
   {path:'Construction',component:Construction},
   {path:'Link',component:Link},
   {path:'home',component:home},
+  {path:'admin',component:admin},
   {path:'', redirectTo:'/home',pathMatch: 'full'}
 ];
 @NgModule({
   imports:[ BrowserModule, FormsModule,CommonModule, RouterModule.forRoot(appRoutes) ],
-  declarations: [ AppComponent, HelloComponent,Symptoms,AboutUs,ContactUs,Services,Doctor,Hospital,Ambulance,Construction,Link,home],
+  declarations: [ AppComponent, HelloComponent,Symptoms,AboutUs,ContactUs,Services,Doctor,Hospital,Ambulance,Construction,Link,home,admin],
   bootstrap:    [ AppComponent ],
   exports: [RouterModule]
 })
