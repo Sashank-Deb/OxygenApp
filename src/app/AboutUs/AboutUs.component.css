@@ -112,7 +112,7 @@ ul button.active a{
 .chavi{
   width: 100%;
 }
-img{
+svg{
   width: 20%;
   display: block;
   margin-left: auto;
@@ -121,7 +121,7 @@ img{
   transition: 0.4s ease;
 }
 
-img:hover{
+svg:hover{
   transform: translateY(3%);
 }
 @keyframes transitionIn {
@@ -147,7 +147,7 @@ ul{
   margin-right: 0px;
 }
 
-  img{
+  svg{
     width: 70%;
   }
 
@@ -170,7 +170,7 @@ ul{
   .title{
     margin-top: 50px;
   }
-  img{
+  svg{
     width: 70%;
   }
   ul{
