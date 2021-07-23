@@ -447,7 +447,7 @@ p{
     -webkit-appearance: none;
     -moz-appearance: none;
     -ms-appearance: none;
-    display:block;
+ 
 }
 
 select:focus,
@@ -528,67 +528,28 @@ select:hover .custom-select .selector-options li{
     }
     .grid{
       grid-template-columns: repeat(4, 1fr);
-      margin-top: 50px;
+      margin-top: 25px;
       margin-right: 0px;
       padding-left: 40px;
       padding-right: 40px;
+      margin-bottom: 25px;
     }
     .A,.C,.R,.D{
-      width: 200px;
-      height: 300px;
-      margin-bottom: 10px;
+      height: 200px;
+  
     }
-    .text{
-      padding-top: 0px;
-      padding-bottom: 0px;
-      padding-left: 0px;
-    }
-    .text h3{
-      text-transform: uppercase;
-      font-size: 18px;
-      padding-top: 20px;
-      padding-left: 20px;
-    }
-    p{
-      font-weight: 700;
-      font-size: 30px;
-      padding-left: 20px;
-    }
-
-    .footer{
-      font-weight: 700;
-      font-size: 18px;
-      padding-left: 20px;
-      padding-top: 20px;
-      padding-bottom: 20px;
-    }
-
-    .delta{
-      font-weight: 700;
-      font-size: 20px;
-      padding-left: 20px;
-      padding-top: 20px;
-      padding-bottom: 20px;
-    }
+    
     .title{
       width: 100%;
       text-align: left;
       margin-left: 0%;
-      padding-left: 60px;
+      padding-left: 45px;
       animation: transitionIn 2.5s;
     }
-    .title h1{
-      color: #fff;
-      font-size: 80px;
-      font-weight: 700;
-    }
+ 
     .subtitle{
-      width: 100%;
-      text-align: left;
       margin-left: 0%;
-      padding-left: 65px;
-      margin-top: 50px;
-      animation: transitionIn 2.5s;
+      padding-left: 50px;
     }
     .subtitle h1{
       color: #fff;
@@ -601,60 +562,33 @@ select:hover .custom-select .selector-options li{
     }
     .subtitle2{
       text-align: left;
-      width: 500px;
+
       animation: transitionIn 2.5s;
     }
     .subtitle2 h1{
       color: #BBBABA;
       font-size: 21px;
       padding: 5px;
-      padding-left: 60px;
+      padding-left: 50px;
     }
     .subtitle3{
       text-align: left;
-      width:500px;
+
       animation: transitionIn 2.5s;
     }
     .subtitle3 h1{
       color: #BBBABA;
       font-size: 21px;
       padding: 5px;
-      padding-left: 60px;
-    }
-    .box{
-      display: grid;
-      grid-template-columns: auto auto;
-      align-items: center;
-      justify-content: center;
-      width: 600px;
-      height: auto;
-      margin-left: 50px;
-      grid-gap: 30px;
-      margin-top: 30px;
-    }
-    .button{
-      border-radius: 30px;
-      border:2px solid transparent;
-      text-align: center;
-      font-size: 23px;
-      padding-top: 20px;
-      padding-bottom: 20px;
-      background: #57FFB3;
-      font-weight: bold;
-      transition: 0.3s;
-      animation: transitionIn 2.5s;
-    }
-    .btn{
-      color: #242424;
-      text-decoration: none;
-      padding: 60px;
-      width: 100%;
+      padding-left: 48px;
+      margin-bottom: 25px;
     }
     .mapselect{
       display: grid;
-      grid-template-columns: 580px auto;
-      margin-top: 50px;
+      grid-template-columns: auto auto;
     }
+
+ 
     .State select  {
         width: 350px;
         height: 60px;
@@ -662,7 +596,7 @@ select:hover .custom-select .selector-options li{
         text-align: center;
         align-items: center;
         display: block;
-        margin-left: auto;
+        margin-right: auto;
       }
       .custom-select .selector-options {
         font-size: 20px;
@@ -674,9 +608,9 @@ select:hover .custom-select .selector-options li{
           display: block;
           margin-right: auto;
           margin-left: auto;
-          margin-top: 230px;
-          margin-bottom: 250px;
-          transform: scale(1.8);
+          margin-top: 200px;
+          margin-bottom: 200px;
+          transform: scale(1.5);
         }
         .State{
           margin-right: 45px;
