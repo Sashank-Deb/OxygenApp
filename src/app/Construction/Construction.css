@@ -11,6 +11,52 @@ header{
   background-size: cover;
   background-position: center;
 }
+
+.pop{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 99;
+  animation: transitionOut 5s;
+  background-color:rgba(0, 0, 0, 0.699);
+  display: block;
+}
+.pop1{
+  width: 100%;
+  z-index: 99;
+}
+.dismiss{
+  border-radius: 20px;
+  border:2px solid transparent;
+  text-align: center;
+  font-size: 16px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background: #bcffe1;
+  font-weight: bold;
+  transition: 0.3s;
+  animation: transitionIn 0.5s;
+  margin-right: 40%;
+  margin-left: 40%;
+
+}
+.btnd{
+  color: #242424;
+  text-decoration: none;
+}
+
+@keyframes transitionOut {
+  0% {opacity: 0;}
+25%  {opacity: 0;}
+90%  {opacity: 0;}
+100% {opacity: 1;}
+}
+
+
+
+
+
+
 ul{
   list-style-type: none;
   display: grid;
@@ -108,18 +154,7 @@ img{
   }
 }
 
-@keyframes transitionOut {
-  from{
-    opacity: 0;
 
-    transform: translateY(1%);
-  }
-  to{
-    opacity: 1;
-
-    transform: translateY(0%);
-  }
-}
 
 @media only screen and (max-device-width: 1560px)and (orientation: portrait){
   .title{
