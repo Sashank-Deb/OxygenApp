@@ -1436,8 +1436,7 @@ function myFunction9() {
                       }
                         </script>
     
-    
-    
+       
  <script id="Mainconfig">
 
   var firebaseConfig = {
@@ -1455,11 +1454,13 @@ function myFunction9() {
 </script>
 <script>
   function writeData() {
+    alert("You have successfully submitted the form"),
     firebase.database().ref("Contact").set({
           Name: document.getElementById("Namefield").value,
           Email: document.getElementById("Emailfield").value,
           Text: document.getElementById("Textfield").value
     });
+    document.getElementById("myForm").reset();
   }
 
 </script>
