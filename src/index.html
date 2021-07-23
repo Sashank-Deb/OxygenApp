@@ -1243,5 +1243,193 @@ function myFunction9() {
           })
           .catch();
           </script>
+    
+    
+    
+      <script>
+                        function myFunction(value) {
+                        fetch('https://api.covid19india.org/data.json')
+                        .then((response) => {
+                        return response.json();
+                        })
+                        .then((data) => {
+                        var s1= data.statewise[value].active;
+                        document.getElementById("myText1").innerHTML = s1;
+                        const counters = document.querySelectorAll('.counter1');
+                        const speed = 100; // The lower the slower
+                        if(s1 !=counter1.innerText){
+                          counter1.innerText=0;}
+                        counters.forEach(counter1 => {
+                          const updateCount = () => {
+                            const target = +s1;
+                            const count = +counter1.innerText;
+
+                            // Lower inc to slow and higher to slow
+                            const inc = target / speed;
+
+                            // console.log(inc);
+                            // console.log(count);
+
+                            // Check if target is reached
+                            if (count < target) {
+                              // Add inc to count and output in counter
+                              counter1.innerText = Math.ceil(count + inc);
+                              // Call function every ms
+                              setTimeout(updateCount, 1);
+                            }
+
+                             else {
+                              counter1.innerText = target;
+                            }
+                          };
+
+                          updateCount();
+                        });
+                        })
+                        fetch('https://api.covid19india.org/data.json')
+                        .then((response) => {
+                        return response.json();
+                        })
+                        .then((data) => {
+                          var s2= data.statewise[value].confirmed;
+                          document.getElementById("myText2").innerHTML = s2;
+                          const counters = document.querySelectorAll('.counter2');
+                          const speed = 100; // The lower the slower
+                          if(s2 !=counter2.innerText){
+                            counter2.innerText=0;}
+                          counters.forEach(counter2 => {
+                            const updateCount = () => {
+                              const target = +s2;
+                              const count = +counter2.innerText;
+
+                              // Lower inc to slow and higher to slow
+                              const inc = target / speed;
+
+                              // console.log(inc);
+                              // console.log(count);
+
+                              // Check if target is reached
+                              if (count < target) {
+                                // Add inc to count and output in counter
+                                counter2.innerText = Math.ceil(count + inc);
+                                // Call function every ms
+                                setTimeout(updateCount, 1);
+                              }
+
+                               else {
+                                counter2.innerText = target;
+                              }
+                            };
+
+                            updateCount();
+                          });
+                        })
+                        fetch('https://api.covid19india.org/data.json')
+                        .then((response) => {
+                        return response.json();
+                        })
+                        .then((data) => {
+                          var s3= data.statewise[value].recovered;
+                          document.getElementById("myText3").innerHTML = s3;
+                          const counters = document.querySelectorAll('.counter3');
+                          const speed = 100; // The lower the slower
+                          if(s3 !=counter3.innerText){
+                            counter3.innerText=0;}
+                          counters.forEach(counter3 => {
+                          	const updateCount = () => {
+                          		const target = +s3;
+                          		const count = +counter3.innerText;
+
+                          		// Lower inc to slow and higher to slow
+                          		const inc = target / speed;
+
+                          		// console.log(inc);
+                          		// console.log(count);
+
+                          		// Check if target is reached
+                          		if (count < target) {
+                          			// Add inc to count and output in counter
+                          			counter3.innerText = Math.ceil(count + inc);
+                          			// Call function every ms
+                          			setTimeout(updateCount, 1);
+                          		}
+
+                               else {
+                          			counter3.innerText = target;
+                          		}
+                          	};
+
+                          	updateCount();
+                          });
+                        })
+                        fetch('https://api.covid19india.org/data.json')
+                        .then((response) => {
+                        return response.json();
+                        })
+                        .then((data) => {
+                          var s4=0;
+                           s4= data.statewise[value].deaths;
+                          document.getElementById("myText4").innerHTML = s4;
+                          const counters = document.querySelectorAll('.counter');
+                          const speed = 100; // The lower the slower
+                          if(s4 !=counter.innerText){
+                            counter.innerText=0;}
+                          counters.forEach(counter => {
+                          	const updateCount = () => {
+                          		var target = +s4;
+                          		var count = +counter.innerText;
+
+                          		// Lower inc to slow and higher to slow
+                          		var inc = target / speed;
+
+                          		// console.log(inc);
+                          		// console.log(count);
+
+
+                          		// Check if target is reached
+                          		if (count < target) {
+                          			// Add inc to count and output in counter
+                          			counter.innerText = Math.ceil(count + inc);
+                          			// Call function every ms
+                          			setTimeout(updateCount, 1);
+                          		}
+
+                               else {
+                          			counter.innerText = target;
+                          		}
+                          	};
+
+                          	updateCount();
+                          });
+
+                        })
+                        fetch('https://api.covid19india.org/data.json')
+                        .then((response) => {
+                        return response.json();
+                        })
+                        .then((data) => {
+                          var s5= data.statewise[value].deltaconfirmed;
+                          document.getElementById("myText-dc").innerHTML = s5;
+                        })
+                        fetch('https://api.covid19india.org/data.json')
+                        .then((response) => {
+                        return response.json();
+                        })
+                        .then((data) => {
+                          var s6= data.statewise[value].deltarecovered;
+                          document.getElementById("myText-dr").innerHTML = s6;
+                        })
+                        fetch('https://api.covid19india.org/data.json')
+                        .then((response) => {
+                        return response.json();
+                        })
+                        .then((data) => {
+                          var s7= data.statewise[value].deltadeaths;
+                          document.getElementById("myText-dd").innerHTML = s7;
+                        })
+                        .catch();
+                      }
+                        </script>
+
   </head>
 <my-app>loading...</my-app>
