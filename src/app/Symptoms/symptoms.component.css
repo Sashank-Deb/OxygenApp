@@ -105,17 +105,17 @@ ul button.active a{
   justify-content: center;
 }
 .grid > article{
-  background: #d3d3d3;
   border: none;
   width: 100%;
-  box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.9);
   border-radius: 20px;
   text-align: center;
   transition: 0.3s ease;
   display: block;
   margin-left: auto;
   margin-right: auto;
+  box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.9);
 }
+
 .grid > article:hover{
   background: #57FFB3;
   transform: translateY(12px);
@@ -126,6 +126,12 @@ ul button.active a{
 .grid > article img{
   width: 75%;
   border-radius: 20px;
+}
+.new{
+  background: #cbfccd;
+}
+.alu{
+  background: #d3d3d3;
 }
 .text{
   padding: 0px 0px 30px;
