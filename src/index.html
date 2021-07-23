@@ -1,6 +1,11 @@
   <head> 
   <div class="taskbar">
 </div> 
+    
+    <script src="https://www.gstatic.com/firebasejs/8.8.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.8.0/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.8.0/firebase-analytics.js"></script>
+    
     <link rel="icon" href="ambulance.png" type="image/icon type">
     <link rel="stylesheet" type="text/css" href="css/symptoms.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -1433,26 +1438,31 @@ function myFunction9() {
     
     
     
-      <div class="contactForm">
-    <form>
-      <h2>Send Message</h2>
-      <div class="inputBox">
-        <input type="text" id="Namefield" required="required">
-        <span>FULL NAME</span>
-      </div>
-      <div class="inputBox">
-        <input type="text" id="Emailfield" required="required">
-        <span>E-MAIL</span>
-      </div>
-      <div class="inputBox">
-        <textarea  id="Textfield" required="required"></textarea>
-        <span>TYPE YOUR MEASSAGE....</span>
-      </div>
-      <div class="inputBox">
-        <input type="submit" onclick="writeData()" value="SEND">
-      </div>
-    </form>
-  </div>
+ <script id="Mainconfig">
+
+  var firebaseConfig = {
+    apiKey: "AIzaSyADWJZ7r7kor-wFv7awUUFvKy4jwwjWj5w",
+    authDomain: "oxygen-2021.firebaseapp.com",
+    projectId: "oxygen-2021",
+    storageBucket: "oxygen-2021.appspot.com",
+    messagingSenderId: "794691649908",
+    appId: "1:794691649908:web:e82961a182187c877cec21",
+    measurementId: "G-J96XE4RE4H"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
+<script>
+  function writeData() {
+    firebase.database().ref("Contact").set({
+          Name: document.getElementById("Namefield").value,
+          Email: document.getElementById("Emailfield").value,
+          Text: document.getElementById("Textfield").value
+    });
+  }
+
+</script>
 
   </head>
 <my-app>loading...</my-app>
