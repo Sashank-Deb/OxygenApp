@@ -117,7 +117,7 @@ ul button.active a{
 .subtitle p:hover{
   color: #57FFB3;
 }
-img{
+svg{
   width: 25%;
   border-radius: 20px;
   display: block;
@@ -164,7 +164,7 @@ img{
     justify-content: center;
     margin-right: 0px;
   }
-  img{
+  svg{
     width: 90%;
     margin: 50px;
     margin-top: 150px;
