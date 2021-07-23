@@ -507,18 +507,7 @@ select:hover .custom-select .selector-options li{
 }
 
 
-@keyframes transitionOut {
-  from{
-    opacity: 0;
 
-    transform: translateY(1%);
-  }
-  to{
-    opacity: 1;
-
-    transform: translateY(0%);
-  }
-}
 /*media querry for portrait mode in ipad*/
 @media only screen and (max-device-width: 1560px)and (orientation: portrait){
 
