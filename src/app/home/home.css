@@ -15,48 +15,50 @@ header{
 }
 
 
-.pop{
+
+
+
+.overlay{
   position: absolute;
   width: 100%;
   height: 100%;
   z-index: 99;
-  animation: transitionOut 5s;
+  animation: transitionEnd 5s;
   background-color:rgba(0, 0, 0, 0.699);
-  display: block;
 }
-.pop1{
+.overlay1{
   width: 100%;
   z-index: 99;
+  position: absolute;
+  top: 60%;
+
 }
-.dismiss{
+.dismiss1{
   border-radius: 20px;
   border:2px solid transparent;
   text-align: center;
   font-size: 16px;
   padding-top: 15px;
   padding-bottom: 15px;
-  background: #bcffe1;
   font-weight: bold;
   transition: 0.3s;
   animation: transitionIn 0.5s;
   margin-right: 40%;
   margin-left: 40%;
-
+  position: absolute;
+  top:90%;
+  left: 5%;
 }
-.btnd{
-  color: #242424;
+.btnd1{
+  color: white;
   text-decoration: none;
 }
-
-@keyframes transitionOut {
-  0% {opacity: 0;}
-25%  {opacity: 0;}
-90%  {opacity: 0;}
-100% {opacity: 1;}
+@keyframes transitionEnd {
+  0% {visibility: collapse;}
+  25%  {visibility: collapse;}
+  90%  {visibility: collapse;opacity: 0;}
+  100% {visibility: visible;opacity: 1;}
 }
-
-
-
 
 
 
