@@ -1,5 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import {platformBrowserDynamic} from '@angular/platform-browser-dynamic';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { FormsModule,ReactiveFormsModule} from '@angular/forms';
 import { Routes, RouterModule } from '@angular/router'
 import { CommonModule } from '@angular/common';
@@ -17,6 +19,9 @@ import {Link} from './Link/Link';
 import {home} from './home/home';
 import {admin} from './admin/admin';
 import { MaterialModule } from './material/material.module';
+import {MatDialogModule} from '@angular/material/dialog';
+import { TooltipDialog } from './admin/tooltip';
+
 const appRoutes: Routes = [
   { path:'Symptoms', component: Symptoms },
   {path:'aboutUs',component: AboutUs  },
@@ -32,8 +37,8 @@ const appRoutes: Routes = [
   {path:'', redirectTo:'/home',pathMatch: 'full'}
 ];
 @NgModule({
-  imports:[ BrowserModule, FormsModule,CommonModule, RouterModule.forRoot(appRoutes),MaterialModule,ReactiveFormsModule ],
-  declarations: [ AppComponent, HelloComponent,Symptoms,AboutUs,ContactUs,Services,Doctor,Hospital,Ambulance,Construction,Link,home,admin],
+  imports:[ BrowserModule, FormsModule,CommonModule, RouterModule.forRoot(appRoutes),MaterialModule,ReactiveFormsModule,MatDialogModule,BrowserAnimationsModule ],
+  declarations: [ AppComponent, HelloComponent,Symptoms,AboutUs,ContactUs,Services,Doctor,Hospital,Ambulance,Construction,Link,home,admin,TooltipDialog],
   bootstrap:    [ AppComponent ],
   exports: [RouterModule]
 })

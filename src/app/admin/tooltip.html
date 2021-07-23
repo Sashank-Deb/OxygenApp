@@ -1,0 +1,52 @@
+
+      <div class="tab" style="background-color:white;border-radius:5px;width:100%;height:100%;">
+  <h1 mat-dialog-title>Set the Tooltip Configuration</h1>
+  <mat-dialog-content>
+  <form [formGroup]="tooltip" *ngIf="show===1" (ngSubmit)="addconfig()">
+    <th class="form-group">
+    
+      <label class="col-form-label">Select Theme</label>
+            <select formControlName="theme"type="text" class="form-control"> 
+      <option value="select" [value]="null" [disabled]="true">Select Theme</option>
+      <option *ngFor="let item of allthemes" [label]="item.viewValue" [value]="item.value"></option>
+    </select>
+    
+    </th>
+
+  <th class="form-group">
+   
+    <label class="col-form-label">Type Text</label>
+        <input formControlName="text" type="text" appearance="outline" matInput placeholder="Text">
+ 
+  </th>
+  
+    <th class="form-group">
+    
+    <label class="col-form-label">Select Page</label>
+      <select formControlName="page"type="text" class="form-control"> 
+        <option value="select" [value]="null" [disabled]="true">Select Page </option>
+        <option *ngFor="let item of allPages" [label]="item" [value]="item"></option>
+      </select>
+    
+    </th>
+ 
+    <th class="form-group">
+    
+    <label class="col-form-label">Select element</label>
+    <select formControlName="element"type="text" class="form-control"> 
+      <option value="select" [value]="null" [disabled]="true">Select element</option>
+      <option *ngFor="let ele of elements" [label]="ele" [value]="ele"></option>
+    </select>
+ 
+</th>
+</form>
+  </mat-dialog-content>
+
+  <div mat-dialog-actions>
+    <button mat-button mat-dialog-close>Cancel</button>
+    <button mat-button type="submit" mat-button [mat-dialog-close]="true" cdkFocusInitial>Submit</button>
+  </div>
+    </div>
+
+
+

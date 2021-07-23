@@ -61,40 +61,10 @@
   <path d="M267.751 63.0701C267.751 66.1845 266.144 69.809 264.14 71.1483C262.137 72.4875 260.53 71.0739 260.53 67.9595C260.53 64.8452 262.137 61.2313 264.14 59.8814C266.144 58.5315 267.751 59.977 267.751 63.0701Z" fill="#EBEBEB"/>
   <path d="M261.082 75.9634L267.237 71.7756C268.862 70.7126 270.234 71.6161 270.459 73.9864L270.802 77.6747L257.517 86.7095L257.869 82.5535C257.967 81.2465 258.305 79.9802 258.86 78.8424C259.415 77.7045 260.173 76.7222 261.082 75.9634Z" fill="#EBEBEB"/>
   </svg>
-<div (click)="show=1;" class="text">
+<div (click)="openDialog()" class="text">
 <h3>Tooltip</h3>
 </div>
 </article>
-
-<div class="col-sm-8 shadow round pb-9" style="background-color:white;border-radius:5px;">
-<form [formGroup]="tooltip" class="dialog-form" *ngIf="show===1">
-  <h1 mat-dialog-title>
-    Set the Tooltip Configuration
-  </h1>
-  <mat-dialog-content>
-    <mat-form-field>
-    <select name="allthemes" matNativeControl [(ngModel)]="allthemes" matInput placeholder="Select Theme"> 
-      <option value="select" [value]="null" [disabled]="true">Select Theme</option>
-      <option *ngFor="let item of allthemes" [label]="item.viewValue" [value]="item.value"></option>
-    </select>
-    </mat-form-field>  
-    
-    <mat-form-field>
-        <input formControlName="text_data" matInput placeholder="Text" />
-    </mat-form-field>
-    <mat-form-field>
-      <select name="allPages" matNativeControl [(ngModel)]="allPages" placeholder="Select a Page to implement Tooltip"> 
-        <option value="select" [value]="null" [disabled]="true">Select a Page to implement Tooltip</option>
-        <option *ngFor="let item of allPages" [label]="item" [value]="item"></option>
-      </select>
-    </mat-form-field>
-  </mat-dialog-content>
-  <div mat-dialog-actions>
-    <button mat-button (click)="show=0">Submit</button>
-  </div>
-
-</form>
-    </div>
 
 
 <article>
