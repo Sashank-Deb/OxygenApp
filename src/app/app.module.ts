@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { FormsModule } from '@angular/forms';
+import { FormsModule,ReactiveFormsModule} from '@angular/forms';
 import { Routes, RouterModule } from '@angular/router'
 import { CommonModule } from '@angular/common';
 import { AppComponent } from './app.component';
@@ -16,6 +16,7 @@ import {Construction} from './Construction/Construction';
 import {Link} from './Link/Link';
 import {home} from './home/home';
 import {admin} from './admin/admin';
+import { MaterialModule } from './material/material.module';
 const appRoutes: Routes = [
   { path:'Symptoms', component: Symptoms },
   {path:'aboutUs',component: AboutUs  },
@@ -31,7 +32,7 @@ const appRoutes: Routes = [
   {path:'', redirectTo:'/home',pathMatch: 'full'}
 ];
 @NgModule({
-  imports:[ BrowserModule, FormsModule,CommonModule, RouterModule.forRoot(appRoutes) ],
+  imports:[ BrowserModule, FormsModule,CommonModule, RouterModule.forRoot(appRoutes),MaterialModule,ReactiveFormsModule ],
   declarations: [ AppComponent, HelloComponent,Symptoms,AboutUs,ContactUs,Services,Doctor,Hospital,Ambulance,Construction,Link,home,admin],
   bootstrap:    [ AppComponent ],
   exports: [RouterModule]
