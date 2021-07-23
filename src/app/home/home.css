@@ -22,7 +22,7 @@ header{
   z-index: 99;
   animation: transitionOut 5s;
   background-color:rgba(0, 0, 0, 0.699);
-
+  display: block;
 }
 .pop1{
   width: 100%;

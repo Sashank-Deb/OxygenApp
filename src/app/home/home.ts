@@ -7,5 +7,5 @@ import { Component, VERSION } from '@angular/core';
 })
 export class home  {
   //name = 'Angular ' + VERSION.major;
-
+  i=0;
 }

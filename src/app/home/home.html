@@ -6,7 +6,7 @@
 </head>
 
 <header>
-    <div class="pop">
+    <div class="pop" [ngStyle]="{'display': i===1 ? 'none' : 'block' }">
 <svg class="pop1" width="670" height="544" viewBox="0 0 670 544" fill="none" xmlns="http://www.w3.org/2000/svg">
   <g filter="url(#filter0_d)">
   <rect x="1" y="1" width="668" height="542" rx="15" fill="white" fill-opacity="0.41"/>
@@ -60,7 +60,7 @@
   </svg>
         
   <div class="dismiss">
-  <a routerLink="/Services" target="_blank" class="btnd">Dismiss</a>
+  <a (click)="i=1;" target="_blank" class="btnd">Dismiss</a>
 </div>
 </div>
     
