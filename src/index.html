@@ -1464,6 +1464,16 @@ function myFunction9() {
   }
 
 </script>
+    
+    <script>
+  function usertap() {
+    var points= document.getElementById("NudgeActionPrompt").value;
+    firebase.database().ref("UsabilityPoints").set({
+      ActionPrompt: points
+    });
+  }
+</script>
+
 
   </head>
 <my-app>loading...</my-app>
