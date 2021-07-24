@@ -1462,7 +1462,18 @@ function myFunction9() {
     });
     document.getElementById("myForm").reset();
   }
-
+  function writeData2() {
+    alert("You have successfully submitted the form"),
+    firebase.database().ref("NudgeType").set({
+          NudgeType:document.getElementById("nudgeType").value,
+          NudgeTheme:document.getElementById("nudgeTheme").value,
+          Title:document.getElementById("Title").value,
+          Subtitle:document.getElementById("Subtitle").value,
+          ElementId: document.getElementById("ElementId").value
+    });
+    
+    document.getElementById("myForm").reset();
+  }
 </script>
     
     <script>

@@ -1,52 +1,39 @@
+
+
 <div class="justify-content-sm-center pt-4" id="wrapper" >
-      <div  style="background-color:#dafde9;border-radius:5px;width:100%;height:100%;" align="center">
-  <h2 mat-dialog-title style="padding-top:50px;">Set the Nudge Configuration</h2>
+  <div  style="background-color:#dafde9;border-radius:5px;width:100%;height:100%;" align="center">
+<h2 mat-dialog-title style="padding-top:50px;">Set the Nudge Configuration</h2>
 
-  <form [formGroup]="tooltip" *ngIf="show===1" (ngSubmit)="addconfig()">
-    <th class="form-group">
-    
-      <label class="col-form-label">Select Theme</label>
-            <select formControlName="theme"type="text" class="form-control"> 
-      <option value="select" [value]="null" [disabled]="true">Select Theme</option>
-      <option *ngFor="let item of allthemes" [label]="item.viewValue" [value]="item.value"></option>
-    </select>
-    
-    </th>
-
-  <th class="form-group">
-   
-    <label class="col-form-label">Type Text</label>
-        <input formControlName="text" type="text" appearance="outline" matInput placeholder="Text">
- 
-  </th>
-  
-    <th class="form-group">
-    
-    <label class="col-form-label">Select Page</label>
-      <select formControlName="page"type="text" class="form-control"> 
-        <option value="select" [value]="null" [disabled]="true">Select Page </option>
-        <option *ngFor="let item of allPages" [label]="item" [value]="item"></option>
-      </select>
-    
-    </th>
- 
-    <th class="form-group">
-    
-    <label class="col-form-label">Select element</label>
-    <select formControlName="element"type="text" class="form-control"> 
-      <option value="select" [value]="null" [disabled]="true">Select element</option>
-      <option *ngFor="let ele of elements" [label]="ele" [value]="ele"></option>
-    </select>
- 
-</th>
-</form>
-
-
-  <div mat-dialog-actions style="padding-bottom:50px;" align="center">
-    <button mat-button mat-dialog-close>Cancel</button>
-    <button mat-button type="submit" mat-button [mat-dialog-close]="true" cdkFocusInitial>Submit</button>
-  </div>
+<div mat-dialog-content class="contactForm" *ngIf="show===1">
+  <form id="myForm">
+    <div class="inputBox">
+      <input type="text" id="nudgeType">
+      <span>NudgeType</span>
     </div>
+    <div class="inputBox">
+      <input type="text" id="nudgeTheme">
+      <span>NudgeTheme</span>
+    </div>
+    <div class="inputBox">
+      <input type="text" id="Title">
+      <span>Title</span>
+    </div>
+    <div class="inputBox">
+      <input type="text" id="Subtitle">
+      <span>Subtitle</span>
+    </div>
+    <div class="inputBox">
+      <input type="text" id="ElementId">
+      <span>ElementId</span>
+    </div>
+    <div class="inputBox">
+      <input type="submit" onclick="writeData2()" value="SEND">
+    </div>
+  </form>
 </div>
 
-
+<div mat-dialog-actions style="padding-bottom:50px;" align="center">
+  <button mat-button mat-dialog-close>Cancel</button>
+  <button mat-button type="submit" mat-button [mat-dialog-close]="true" cdkFocusInitial>Submit</button>
+</div>
+</div></div>
