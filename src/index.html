@@ -1473,7 +1473,19 @@ function myFunction9() {
     });
   }
 </script>
+    
+<script>
+fetch('https://oxygen-2021-default-rtdb.firebaseio.com/.json')
+.then((response) => {
+  return response.json();
+})
+.then((data) => {
+    var z= data.UsabilityPoints.ActionPrompt;
+    document.getElementById("points").innerHTML = z;
 
+})
+.catch();
+</script>
 
   </head>
 <my-app>loading...</my-app>
