@@ -21,7 +21,7 @@ import {admin} from './admin/admin';
 import { MaterialModule } from './material/material.module';
 import {MatDialogModule} from '@angular/material/dialog';
 import { TooltipDialog } from './admin/tooltip';
-
+import { HttpClientModule } from '@angular/common/http'; 
 const appRoutes: Routes = [
   { path:'Symptoms', component: Symptoms },
   {path:'aboutUs',component: AboutUs  },
@@ -37,7 +37,7 @@ const appRoutes: Routes = [
   {path:'', redirectTo:'/home',pathMatch: 'full'}
 ];
 @NgModule({
-  imports:[ BrowserModule, FormsModule,CommonModule, RouterModule.forRoot(appRoutes),MaterialModule,ReactiveFormsModule,MatDialogModule,BrowserAnimationsModule ],
+  imports:[ BrowserModule, FormsModule,CommonModule, RouterModule.forRoot(appRoutes),MaterialModule,ReactiveFormsModule,MatDialogModule,BrowserAnimationsModule,HttpClientModule ],
   declarations: [ AppComponent, HelloComponent,Symptoms,AboutUs,ContactUs,Services,Doctor,Hospital,Ambulance,Construction,Link,home,admin,TooltipDialog],
   bootstrap:    [ AppComponent ],
   exports: [RouterModule]
