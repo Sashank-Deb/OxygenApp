@@ -12,6 +12,15 @@ header{
   background-position: center;
 }
 
+#NudgeActionPrompt{
+  background: transparent;
+  border: none;
+  border-radius: 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .pop{
   position: absolute;
   width: 100%;
