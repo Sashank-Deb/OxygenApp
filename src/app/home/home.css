@@ -18,6 +18,7 @@ header{
 
 
 
+
 .overlay{
   position: absolute;
   width: 100%;
@@ -29,8 +30,7 @@ header{
 .overlay1{
   width: 100%;
   z-index: 99;
-  position: absolute;
-  top: 60%;
+  margin-top: 10%;
 
 }
 .dismiss1{
@@ -45,9 +45,7 @@ header{
   animation: transitionIn 0.5s;
   margin-right: 40%;
   margin-left: 40%;
-  position: absolute;
-  top:90%;
-  left: 5%;
+
 }
 .btnd1{
   color: white;
@@ -59,8 +57,6 @@ header{
   90%  {visibility: collapse;opacity: 0;}
   100% {visibility: visible;opacity: 1;}
 }
-
-
 
 
 
@@ -517,7 +513,12 @@ select:hover .custom-select .selector-options li{
     justify-content: center;
     margin-right: 0px;
   }
+.overlay1{
+  width: 100%;
+  z-index: 99;
+  margin-top: 90%;
 
+}
     .container{
       grid-template-columns: repeat(1, 1fr);
     }
