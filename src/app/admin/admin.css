@@ -12,6 +12,26 @@ header{
   background-position: center;
   display: grid;
 }
+.numbers{
+  display: block;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  background: rgb(134, 255, 150);
+  padding: 20px;
+  margin-top:50px;
+}
+.numbers h2{
+  color: rgb(0, 31, 15);
+  margin-top:10px;
+  font-size: 40px;
+}
+.numbers p{
+  font-weight: bold;
+  color: black;
+  opacity: 0.7;
+}
 ::-webkit-scrollbar-track {
   background: transparent;
 }
