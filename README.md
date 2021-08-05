@@ -1,12 +1,12 @@
 # OXYGEN (Implementing In App Nudges Using Angular)
 Check out the code:
-[Edit on StackBlitz ⚡️](https://stackblitz.com/edit/angular-ivy-ityo1f)
-# https://www.behance.net/gallery/124092919/In-app-Nudges-Bajaj-Finserv-HACKATHON21-(Team-Oxygen)/modules/705212435
+[Edit on StackBlitz ⚡️] https://stackblitz.com/edit/angular-ivy-ityo1f
+[UI on Behance] https://www.behance.net/gallery/124092919/In-app-Nudges-Bajaj-Finserv-HACKATHON21-(Team-Oxygen)/modules/705212435
 
 # Winners of ALL INDIA HACKATHON BY BAJAJ FINSERV
 Designed and implemented an SDK using angular to an in-app tool to allow setting up in-app nudges for various use cases, tool to allow nudge configuration on screen without need of having to code them on the screen / per use case. My team stood third in the Hackathon for the same.
 
-### Types of Nudges :-
+### Types of Nudges :
 Below are the types of nudges that we implemented and can be customized from users end.
 Capsule, Tooltip, Action Prompt, Beacon, Feedback, Spotlight, Alert, Highlighters, Circles, Blinkers, Stars 
 
