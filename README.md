@@ -1,7 +1,11 @@
 # OXYGEN (Implementing In App Nudges Using Angular)
-Check out the code:
-[Edit on StackBlitz ⚡️](https://stackblitz.com/edit/angular-ivy-ityo1f) <br/>
-Check Out the Frontend: [UI on Behance](https://www.behance.net/gallery/124092919/In-app-Nudges-Bajaj-Finserv-HACKATHON21-(Team-Oxygen)/modules/705212435)
+Check Out the Code:[Edit on StackBlitz ⚡️](https://stackblitz.com/edit/angular-ivy-ityo1f) <br/>
+Check Out the Frontend: [UI on Behance](https://www.behance.net/gallery/124092919/In-app-Nudges-Bajaj-Finserv-HACKATHON21-(Team-Oxygen)/modules/705212435)  <br/>
+Check Out the Live Demo on Youtube: [Deployment Video](https://lnkd.in/gmi_Guh)
+
+# Control Panel
+<img width="1280" alt="iMac - 1" src="https://user-images.githubusercontent.com/69194538/128401197-481d5718-e567-4485-92b1-d6bf4a3c806c.png">
+<img width="1280" alt="iMac - 2" src="https://user-images.githubusercontent.com/69194538/128401206-4b52ef40-6ef8-4089-a195-69f7c9bbdfb5.png">
 
 # Winners of ALL INDIA HACKATHON BY BAJAJ FINSERV
 Designed and implemented an SDK using angular to an in-app tool to allow setting up in-app nudges for various use cases, tool to allow nudge configuration on screen without need of having to code them on the screen / per use case. My team stood third in the Hackathon for the same.
