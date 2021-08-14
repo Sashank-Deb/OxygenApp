@@ -1,5 +1,5 @@
 # OXYGEN (Implementing In App Nudges Using Angular)
-Check Out the Code:[Edit on StackBlitz ⚡️](https://stackblitz.com/edit/angular-ivy-4dctfq) <br/>
+Check Out the Code: [Edit on StackBlitz ⚡️](https://stackblitz.com/edit/angular-ivy-4dctfq) <br/>
 Check Out the Frontend: [UI on Behance](https://www.behance.net/gallery/124092919/In-app-Nudges-Bajaj-Finserv-HACKATHON21-(Team-Oxygen)/modules/705212435)  <br/>
 Check Out the Live Demo on Youtube: [Deployment Video](https://lnkd.in/gmi_Guh)
 
